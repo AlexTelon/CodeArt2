@@ -1,0 +1,25 @@
+{%  extends "layout.html" %}
+{%  block body %}
+
+    <div class="row">
+        <div class="col-md-4" id="editor" style="background: gold">
+            {%  block editor %}
+                <h1>EDITOR</h1>
+            {%  endblock %}
+        </div>
+        <div class="col-md-8" id="canvas" style="background: silver">
+            {%  block canvas %}
+                <div class="example">
+                    <pre>
+                        KOLLA HÄR
+                     <code src="{{ url_for('static', filename='sketch.js') }}"></code>
+                    </pre>
+                </div>
+                <script>renderCode()</script>
+{#                <iframe src="{{ url_for('static', filename='canvas.html') }}" width="600px" height="400px"></iframe>#}
+{#                <h1>CANVAS</h1>#}
+            {%  endblock %}
+        </div>
+    </div>
+
+{%  endblock %}

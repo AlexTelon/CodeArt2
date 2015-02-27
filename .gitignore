@@ -1,0 +1,5 @@
+static/ace-master
+static/addons
+static/p5*
+static/src-noconflict
+.idea/

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    {% block title %}{% endblock %}
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.css') }}">
+
+</head>
+<body>
+{% block body %}
+
+{% endblock %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+<script src="{{ url_for('static', filename='p5.js') }}"></script>
+<script src="{{ url_for('static', filename='src-noconflict/ace.js') }}"></script>
+<script src="{{ url_for('static', filename='render.js') }}"></script>
+
+</body>
+</html>
+</html>
